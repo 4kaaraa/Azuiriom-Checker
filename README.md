@@ -20,6 +20,7 @@ AC is a software that allows you to be informed of the latest version of Azuriom
 
 **Feature**
 - Auto Update
+- Refresh
 
 # Installation
 
