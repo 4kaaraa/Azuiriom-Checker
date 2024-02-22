@@ -79,11 +79,12 @@ public class Main {
                     changelog = changelog.replace("\r", "");
                     DiscordWebhook discordWebhook = new DiscordWebhook(webhookUrl);
 
+                    discordWebhook.setAvatarUrl("https://demo.azuriom.com/storage/img/logo.png");
                     discordWebhook.setUsername("Azuriom");
 
                     //discordWebhook.setContent("Nouvelle version : `" + latestVersion + "` | (" + currentVersion + ")> ");
                     discordWebhook.addEmbed(new DiscordWebhook.EmbedObject()
-                            .setColor(Color.yellow)
+                            .setColor(Color.red)
                             .setTitle("New update: " + latestVersion)
                             .setDescription("```" + changelog + "```")
                     );
@@ -142,11 +143,12 @@ public class Main {
         DiscordWebhook testWebhook = new DiscordWebhook(webhook);
 
         testWebhook.setUsername("Azuriom");
+        testWebhook.setAvatarUrl("https://demo.azuriom.com/storage/img/logo.png");
 
         testWebhook.addEmbed(new DiscordWebhook.EmbedObject()
                 .setColor(Color.green)
-                .setTitle("Configuration")
-                .setDescription("> L'installation c'est correctement derouler")
+                .setTitle("Done")
+                .setDescription("> The installation went well")
                 .setImage("https://tenor.com/fr/view/anime-dance-dancer-girl-anime-girl-gif-26428864")
         );
 
